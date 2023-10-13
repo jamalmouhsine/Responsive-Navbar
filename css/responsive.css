@@ -1,0 +1,78 @@
+/* all media queries start */
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+/* container start */
+.container{
+    max-width: 1140px;
+}
+/* container end */
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+/* container start */
+.container{
+    max-width: 960px;
+}
+/* container end */
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+/* container start */
+.container{
+    max-width: 720px;
+}
+/* container end */
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+/* container start */
+.container{
+    max-width: 540px;
+}
+/* container end */
+/* logo start */
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 100%;
+    min-height: 70px;
+}
+/* logo end */
+/* menu start */
+.menu{
+    display: block;
+}
+/* menu end */
+/* nav list start */
+.nav-list{
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    border-top: 1px solid transparent;
+    transition: height .5s ease-in-out , border-color .5s ease-in-out;
+}
+.nav-list li{
+    display: block;
+    margin: 15px 0;
+}
+.nav-list li:first-of-type{
+    margin-top: 25px;
+}
+.nav-list li:last-of-type{
+    margin-bottom: 25px;
+}
+.nav-list li:not(:last-of-type){
+    margin-right: 0;
+}
+/* nav list end */
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+}
+/* all media queries end */
